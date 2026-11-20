@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JollyPod Hub | Every Potential Deserves a Path</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">JollyPod <span>Hub.</span></a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#paths">Explore Paths</a>
+        <a href="#opportunities">Opportunities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#discover" class="header-btn">Get Started</a>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="eyebrow">WELCOME TO JOLLYPOD HUB</span>
+
+            <h1>Your Future.<br>
+                Your Talent.<br>
+                <span>Your Path.</span>
+            </h1>
+
+            <p>
+                Discover your potential, explore educational opportunities,
+                develop practical skills and build a future that works for you.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#discover" class="btn-primary">Discover Your Path →</a>
+                <a href="#about" class="btn-outline">Learn More</a>
+            </div>
+
+            <div class="hero-note">
+                Every Potential Deserves a Path.
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900"
+                 alt="Young people working and learning together">
+            <div class="image-card">
+                <strong>One Platform.</strong>
+                <span>Multiple Opportunities.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro section" id="about">
+        <span class="eyebrow">ABOUT US</span>
+        <h2>Different backgrounds.<br>Equal opportunities.</h2>
+        <p>
+            JollyPod Hub is an education and career development platform
+            designed to help young people find their direction. Whether
+            you want to join a university, learn a practical skill, find a
+            job or start a business, there is a path for you.
+        </p>
+    </section>
+
+    <section class="paths section" id="paths">
+        <span class="eyebrow">EXPLORE YOUR FUTURE</span>
+        <h2>Choose Your Path</h2>
+        <p class="section-description">
+            Start with your interests and goals. Choose a path that suits you.
+        </p>
+
+        <div class="path-grid">
+
+            <article class="path-card formal">
+                <div class="path-icon">🎓</div>
+                <span class="path-label">PATH 01</span>
+                <h3>Formal Education</h3>
+                <p>
+                    Continue your education and gain recognized
+                    academic or professional qualifications.
+                </p>
+
+                <ul>
+                    <li>Universities</li>
+                    <li>Colleges</li>
+                    <li>TVET Institutions</li>
+                    <li>Diploma & Certificate Courses</li>
+                    <li>Scholarship Information</li>
+                </ul>
+
+                <a href="#opportunities" class="card-link"
+                   onclick="selectPath('formal')">
+                    Explore Career Path →
+                </a>
+            </article>
+
+            <article class="path-card practical">
+                <div class="path-icon">💡</div>
+                <span class="path-label">PATH 02</span>
+                <h3>Practical Development</h3>
+                <p>
+                    Build your talent, improve your skills and
+                    discover ways to earn through your abilities.
+                </p>
+
+                <ul>
+                    <li>Skills Development</li>
+                    <li>Online Tutorials</li>
+                    <li>Vocational Training</li>
+                    <li>Jobs & Apprenticeships</li>
+                    <li>Entrepreneurship</li>
+                </ul>
+
+                <a href="#opportunities" class="card-link"
+                   onclick="selectPath('practical')">
+                    Explore Talent Path →
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="discover section" id="discover">
+        <span class="eyebrow">YOUR JOURNEY STARTS HERE</span>
+        <h2>Identify Your Interests & Goals</h2>
+        <p class="section-description">
+            Tell us what you are interested in and what you want to achieve.
+        </p>
+
+        <div class="discovery-box">
+            <form id="interestForm">
+
+                <label for="interest">What are you interested in?</label>
+                <select id="interest" required>
+                    <option value="">Select your interest</option>
+                    <option value="technology">Technology & ICT</option>
+                    <option value="business">Business & Entrepreneurship</option>
+                    <option value="beauty">Beauty & Hairdressing</option>
+                    <option value="sports">Football & Sports</option>
+                    <option value="music">Music & Performing Arts</option>
+                    <option value="fashion">Fashion & Design</option>
+                    <option value="cooking">Cooking & Catering</option>
+                    <option value="photography">Photography & Video</option>
+                    <option value="education">General Education</option>
+                    <option value="other">Other Interests</option>
+                </select>
+
+                <label for="goal">What would you like to achieve?</label>
+                <select id="goal" required>
+                    <option value="">Choose your goal</option>
+                    <option value="study">Join a University or College</option>
+                    <option value="tvet">Join a TVET Institution</option>
+                    <option value="training">Get Practical Training</option>
+                    <option value="job">Find a Job</option>
+                    <option value="business">Start a Business</option>
+                    <option value="skills">Improve My Skills</option>
+                </select>
+
+                <button type="submit" class="btn-primary full-btn">
+                    Find My Path →
+                </button>
+            </form>
+
+            <div id="recommendation" class="recommendation" hidden></div>
+        </div>
+    </section>
+
+    <section class="opportunities section" id="opportunities">
+        <span class="eyebrow">EXPLORE OPPORTUNITIES</span>
+        <h2>Where Would You Like to Go?</h2>
+        <p class="section-description">
+            Explore resources and opportunities to move forward.
+        </p>
+
+        <div class="opportunity-grid">
+
+            <article class="opportunity-card">
+                <div class="opportunity-icon">🏫</div>
+                <h3>Find Institutions</h3>
+                <p>Discover universities, colleges and TVET institutions.</p>
+                <a href="#discover" onclick="selectPath('formal')">Explore →</a>
+            </article>
+
+            <article class="opportunity-card">
+                <div class="opportunity-icon">📚</div>
+                <h3>Learn New Skills</h3>
+                <p>Access learning resources and practical tutorials.</p>
+                <a href="#discover" onclick="selectPath('practical')">Explore →</a>
+            </article>
+
+            <article class="opportunity-card">
+                <div class="opportunity-icon">💼</div>
+                <h3>Find Jobs</h3>
+                <p>Discover employment, internships and apprenticeships.</p>
+                <a href="https://www.brightermonday.co.ke/" target="_blank">Find Jobs →</a>
+            </article>
+
+            <article class="opportunity-card">
+                <div class="opportunity-icon">🚀</div>
+                <h3>Start a Business</h3>
+                <p>Learn business planning, marketing and entrepreneurship.</p>
+                <a href="https://www.youtube.com/results?search_query=small+business+training+for+beginners" target="_blank">Start Learning →</a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div>
+            <span class="eyebrow">YOUR FUTURE MATTERS</span>
+            <h2>Your background does not define your future.</h2>
+            <p>
+                Education is one path. Skills are another.
+                Your talent, determination and willingness to learn
+                can open doors to new opportunities.
+            </p>
+            <a href="#discover" class="btn-light">Start Your Journey →</a>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>Contact Swahili Pot Hub Foundation</h2>
+        <p>
+            Have questions about education, skills or opportunities?
+            Connect with Swahili Pot Hub Foundation for assistance
+            and more information about JollyPod Hub.
+        </p>
+        <a href="mailto:info@swahilipothub.co.ke?subject=JollyPod%20Hub%20Enquiry" class="btn-primary">
+            Email Swahili Pot Hub Foundation
+        </a>
+        <small>info@swahilipothub.co.ke</small>
+    </section>
+</main>
+
+<footer>
+    <a href="#home" class="logo">JollyPod <span>Hub.</span></a>
+    <p>Every Potential Deserves a Path.</p>
+    <p>© 2026 JollyPod Hub. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
